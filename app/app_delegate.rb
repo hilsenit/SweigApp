@@ -19,10 +19,15 @@ class AppDelegate
     # @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
     # @window.makeKeyAndVisible
 
-    @blue_view = UIView.alloc.initWithFrame(CGRectMake(10, 10, 100, 100))
-    @blue_view.backgroundColor = UIColor.redColor
+    @green_view = UIView.alloc.initWithFrame(CGRectMake(10, 30, 39, 39))
+    @green_view.backgroundColor = UIColor.blueColor
 
-    @window.addSubview(@blue_view)
+    @red_view = UIView.alloc.initWithFrame(CGRectMake(50, 50, 200, 200))
+    @red_view.backgroundColor = UIColor.redColor
+    @red_view.addSubview(@green_view)
+
+
+    @window.addSubview(@red_view)
 
 
     true
